@@ -50,15 +50,8 @@ const btnMulti = document.querySelector('#button-multiply');
 const btnPunto = document.querySelector('#button-point');
 const btnIgual = document.querySelector('#button-equal');
 const btnClear = document.querySelector('#clear');
-const btnDelete = document.querySelector('#delete');
+const btnNegative = document.querySelector('#delete');
 
-/*function btnsCalculadora(button){
-  switch(button){
-    case (button === btn1) :
-        
-        break;
-  }
-};*/
 
 function apretarBoton1() {
     displayValue.value = displayValue.value + "1" ;
@@ -118,15 +111,16 @@ function apretarBotonMultiply() {
 function apretarBotonEqual(){
  segundoNumero = parseInt(displayValue.value);
  operate(primerNumero, segundoNumero, operador);
+ primerNumero = parseInt(displayValue.value);
 }
 
 function apretarBotonClear(){
     displayValue.value = "";
 }
 
-/*function apretarBotonDelete(){
-    displayValue.value = displayValue.value 
-} */
+function apretarBotonNegative(){
+    displayValue.value = "-" + displayValue.value;
+} 
 
 btn1.addEventListener('click', apretarBoton1);
 btn2.addEventListener('click', apretarBoton2);
@@ -145,3 +139,4 @@ btnDivision.addEventListener('click', apretarBotonDivision);
 btnPunto.addEventListener('click', apretarBotonPoint);
 btnClear.addEventListener('click', apretarBotonClear);
 btnIgual.addEventListener('click', apretarBotonEqual);
+btnNegative.addEventListener('click', apretarBotonNegative);

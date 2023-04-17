@@ -1,10 +1,12 @@
 .container{
     width: 400px;
-    height: 540px;
+    height: 600px;
     margin: auto;
     background-color: hsl(180, 40%, 62%);
     display: grid;
     justify-content: space-around;
+    border-radius: 10%;
+    border: solid 2px;
 }
 
 .delete-buttons{
@@ -12,28 +14,30 @@
 }
 
 .delete{
-    width: 170px;
+    width: 300px;
     height: 50px;
     margin: 10px 0px 10px 0px;
+    border-radius: 10%;
+    background-color: rgb(250, 0, 21);
+    color: white;
+    font-size: 20px;
 
 }
 
 .display{
+    text-align: right;
     width: 342px;
+    margin-top: 30px;
     height: 70px;
-    margin-top: 10px;
     font-size: 40px;
+    border: 2px solid;
 }
-
-
-
 
 .delete-buttons{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
 
 .numbers{
     width: 350px;
@@ -43,3 +47,88 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
+
+::placeholder {
+    text-align: right;
+  }
+
+  .color-buttons{
+    border-radius: 10%;
+    background-color: rgb(4, 40, 118);
+    color: white;
+    font-size: 30px;
+  }
+  .color-operator{
+    border-radius: 10%;
+    background-color: rgb(11, 232, 232);
+    color: black;
+    font-size: 30px;
+  }
+  .color-equal{
+    border-radius: 10%;
+    background-color: rgb(225, 250, 0);
+    color: white;
+    font-size: 30px;
+  }
+
+  @media (max-width: 360px) {
+    .container{
+        width: 300px;
+        height: 540px;
+    }
+    
+   .delete-buttons{
+        width: 300px;
+        margin: auto;
+    }
+    
+    .delete{
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .display{
+        width: 280px;
+        margin-top: 50px;
+        margin-bottom: 5px;
+        height: 60px;
+        font-size: 30px;
+        border: 2px solid;
+    }
+    
+    .delete-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .numbers{
+        width: 200px;
+        display: grid;
+        grid-template-columns: repeat(4, 65px);
+        grid-template-rows: repeat(4, 65px);
+        
+    }
+    
+
+    
+      .color-buttons{
+        border-radius: 10%;
+        background-color: rgb(4, 40, 118);
+        color: white;
+        font-size: 20px;
+      }
+      .color-operator{
+       border-radius: 10%;
+        background-color: rgb(11, 232, 232);
+        color: black;
+        font-size: 20px;
+      }
+      .color-equal{
+        border-radius: 10%;
+        background-color: rgb(225, 250, 0);
+        color: white;
+        font-size: 20px;
+      }
+    }

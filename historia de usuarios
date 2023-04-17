@@ -1,0 +1,9 @@
+- Cuando aprete el boton numero 1, el display debe figurar un uno. Asi con todos los botones. 
+- Mientras siga apretando el numero 1 que el display los vaya poniendo uno al lado del otro.
+
+
+Aquí hay algunas pistas para ayudarte a implementar esto:
+
+Debes crear variables para almacenar el primer número, la operación seleccionada y el segundo número (ingresado por el usuario después de la selección de la operación).
+Cuando el usuario presione un botón de operación (suma, resta, multiplicación, división), debes guardar el número actual en la variable de primer número y la operación seleccionada en la variable de operación. Luego, debes limpiar la pantalla de la calculadora para que el usuario pueda ingresar el segundo número.
+Cuando el usuario presione la tecla "=", debes llamar a la función operate(). Dentro de esta función, debes leer el valor actual en la pantalla de la calculadora (el segundo número), convertirlo en un número y luego usar la variable de operación para realizar la operación correspondiente entre el primer número y el segundo número. Finalmente, debes mostrar el resultado en la pantalla de la calculadora.
